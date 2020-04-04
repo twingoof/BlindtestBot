@@ -1,0 +1,2 @@
+# BlindtestBot
+Discord Blindtest Bot
