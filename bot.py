@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
+CHANNEL_NAME = os.getenv('CHANNEL_NAME')
 client = discord.Client()
 
 @client.event
@@ -14,7 +15,7 @@ async def on_ready():
     global game_chan
     guild = discord.utils.get(client.guilds, name=GUILD)
     print(f'{client.user} has connected to Discord on {guild.name} (id: {guild.id}) !')
-    game_chan = discord.utils.get(client.get_all_channels(), name='bot')
+    game_chan = discord.utils.get(client.get_all_channels(), name=CHANNEL_NAME)
     print(f'Ready to write in channel: {game_chan.name} (id: {game_chan.id})')
     await game_chan.send('Hello !')
 
