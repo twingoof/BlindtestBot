@@ -1,3 +1,4 @@
-TOKEN = ''
-GUILD = ''
-GAME_CHAN = 'bot'
+#!/usr/bin/python3
+
+
+CHANNEL_NAME = 'travail'
