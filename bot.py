@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 import discord
+from config import *
 from discord.ext import commands
 
-TOKEN = 'NjczODYzODMzODg1OTk5MTI0.XwUJNg.Fnp7LDY2YLKmXgKHoAIpHEUf0k8'
+TOKEN = bot_token
 client = commands.Bot(command_prefix='@')
 
 @client.event

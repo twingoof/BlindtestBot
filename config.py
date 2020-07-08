@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 
-
-CHANNEL_NAME = 'travail'
+bot_token = '' #Put your token here
