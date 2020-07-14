@@ -2,13 +2,13 @@
 
 import discord
 import time
-
 # import youtube_dl #TODO: Remove if unused
-from config import *
+import conf
 from discord.ext import commands
 
 
-TOKEN = bot_token
+TOKEN = conf.bot_token
+CONNECT_MSG = '\x1b[32m        ------------\n        |Bot online|\n        ------------\x1b[37m'
 client = commands.Bot(command_prefix='>')
 
 
@@ -18,7 +18,7 @@ async def debug(channel: discord.channel.TextChannel, message):
 
 @client.event
 async def on_ready():
-    print('\x1b[32m        ------------\n        |Bot online|\n        ------------\x1b[37m')
+    print(CONNECT_MSG)
 
 
 @client.command(pass_context=True)
