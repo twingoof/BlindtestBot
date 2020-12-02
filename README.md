@@ -1,4 +1,4 @@
-# BlindtestBot [ STILL IN DEVELOPPEMENT: 14/07/2020]
+# BlindtestBot [WIP]
 Blindtest bot for discord using discord.py (not really made for big servers)
 
 # Dependencies
